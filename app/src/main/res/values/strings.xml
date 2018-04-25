@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">ForecastWeather</string>
+    <string-array name="fakeWeahterData">
+        <item>Today:Max:25°,Min:20°,Humidity:1014 hPa,Pressure:50%</item>
+        <item>Tomorrow:Max:30°,Min:20°,Humidity:1014 hPa,Pressure:45%</item>
+        <item>Friday:Max:32°,Min:19°,Humidity:1014 hPa,Pressure:55%</item>
+        <item>SatDay:Max:29°,Min:22°,Humidity:1014 hPa,Pressure:60%</item>
+        <item>SunDay:Max:25°,Min:20°,Humidity:1014 hPa,Pressure:50%</item>
+        <item>MonDay:Max:30°,Min:20°,Humidity:1014 hPa,Pressure:45%</item>
+        <item>TuesDay:Max:32°,Min:19°,Humidity:1014 hPa,Pressure:55%</item>
+        <item>Wednesday:Max:29°,Min:22°,Humidity:1014 hPa,Pressure:60%</item>
+        <item>Thursday:Max:29°,Min:22°,Humidity:1014 hPa,Pressure:60%</item>
+        <item>Friday:Max:32°,Min:19°,Humidity:1014 hPa,Pressure:55%</item>
+        <item>SatDay:Max:29°,Min:22°,Humidity:1014 hPa,Pressure:60%</item>
+        <item>SunDay:Max:25°,Min:20°,Humidity:1014 hPa,Pressure:50%</item>
+        <item>MonDay:Max:30°,Min:20°,Humidity:1014 hPa,Pressure:45%</item>
+        <item>TuesDay:Max:32°,Min:19°,Humidity:1014 hPa,Pressure:55%</item>
+        <item>Wednesday:Max:29°,Min:22°,Humidity:1014 hPa,Pressure:60%</item>
+        <item>Thursday:Max:29°,Min:22°,Humidity:1014 hPa,Pressure:60%</item>
+    </string-array>
 </resources>
