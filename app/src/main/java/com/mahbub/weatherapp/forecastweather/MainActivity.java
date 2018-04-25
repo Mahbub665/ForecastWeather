@@ -4,13 +4,16 @@ package com.mahbub.weatherapp.forecastweather;
     import android.os.Bundle;
     import android.support.v7.widget.LinearLayoutManager;
     import android.support.v7.widget.RecyclerView;
+    import android.view.View;
     import android.widget.LinearLayout;
+    import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ForecastAdapter.ForecastAdapterOnClickHandler {
     // declare all member veriable
-    RecyclerView mWeatherRecyclerView;
-    ForecastAdapter mForecastAdapter;
-    String[] mWeatherData;
+    private RecyclerView mWeatherRecyclerView;
+    private ForecastAdapter mForecastAdapter;
+    private String[] mWeatherData;
+    private Toast mToast;
 
 
     @Override
@@ -29,8 +32,19 @@ public class MainActivity extends AppCompatActivity {
         mWeatherRecyclerView.setHasFixedSize(true);
 
         //initialize adapter with mWeahterData as a constructor parameter
-        mForecastAdapter = new ForecastAdapter(mWeatherData);
+        mForecastAdapter = new ForecastAdapter(mWeatherData,this);
         mWeatherRecyclerView.setAdapter(mForecastAdapter);
+
+    }
+
+
+    @Override
+    public void onClick(String data) {
+        if (mToast != null){
+            mToast.cancel();
+        }
+        mToast = Toast.makeText(this, data + "clicked",Toast.LENGTH_SHORT);
+        mToast.show();
 
     }
 }
