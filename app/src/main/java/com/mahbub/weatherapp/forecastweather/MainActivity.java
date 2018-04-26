@@ -1,5 +1,6 @@
 package com.mahbub.weatherapp.forecastweather;
 
+    import android.content.Intent;
     import android.support.v7.app.AppCompatActivity;
     import android.os.Bundle;
     import android.support.v7.widget.LinearLayoutManager;
@@ -40,9 +41,9 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapter.F
 
     @Override
     public void onClick(String data) {
-        if (mToast != null){
-            mToast.cancel();
-        }
+        Intent intent = new Intent(this,Detailsctivity.class);
+        intent.putExtra(Intent.EXTRA_TEXT,data);
+        startActivity(intent);
         mToast = Toast.makeText(this, data + "clicked",Toast.LENGTH_SHORT);
         mToast.show();
 
